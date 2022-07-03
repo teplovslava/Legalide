@@ -156,8 +156,8 @@ header
         margin-bottom: 35px
     p
 
-        width: 376px
-        height: 60px
+        max-width: 376px
+        min-height: 60px
         font-family: 'Montserrat'
         font-style: normal
         font-weight: 500
@@ -845,7 +845,7 @@ header
 .bottom-social img:nth-child(4) 
     padding-right: 10px
 
-@media (max-width: 768px)
+@media (max-width: 768px) and (min-width: 481px)
     .display-none
         display: flex
         ul
@@ -1031,3 +1031,227 @@ header
         width: 50%
     .bottom-descr
         margin-bottom: 15px
+
+@media (max-width: 480px)
+    .main-section
+        width: 100%
+        background-size: cover
+    .display-none
+        display: flex
+        ul
+            li:nth-child(2)
+                margin: 0
+            
+    .display-desctop
+        display: none
+    header
+        width: 100%
+        justify-content: start
+        flex-wrap: wrap
+        background-color: #fff
+        .mobile-display
+            display: block
+            width: 100%
+            ul 
+                li:not(:nth-child(6))
+                    margin: 0 auto
+    .burger
+        margin-right: 9.6%
+        width: 22px
+    .mobile-display 
+        margin-bottom: 98px
+        ul
+            padding-top: 20px
+            flex-direction: column
+            margin-bottom: 0
+            li
+                a
+                    font-size: 30px
+                    line-height: 45px
+    header
+        margin-bottom: 0 
+        .mobile-display ul li:not(:nth-child(4))
+            margin-bottom: 30px
+
+    .hero 
+        padding-bottom: 1px
+        h1
+            width: 100%
+            font-size: 40px
+            line-height: 50px
+            text-align: center
+            letter-spacing: 0.2px
+            margin-top: 84px
+            margin-bottom: 35px
+        p
+            width: 100%
+            font-size: 20px
+            line-height: 30px
+            text-align: center
+            margin-bottom: 35px
+    .btns-undertext
+        width: 100%
+        flex-direction: column
+        margin: 0 auto
+        margin-bottom: 584px
+        button
+            width: 56%
+            margin: 0px 22%
+            margin-bottom: 30px
+    .btns-undertext button
+        font-size: 11px
+        line-height: 27px
+        padding: 9px 16px
+    .hero::after
+        top: 0
+        left:-20%
+        width:140%
+        height: 100%
+        background-position: bottom
+        background-size: 377px
+    .hero p
+        min-height: 60px
+    .main-content1 h3 
+        width: 100%
+        padding-top: 145px
+        font-size: 40px
+        line-height: 50px
+        text-align: center
+    .main-content1 p 
+        max-width: 76%
+        margin-bottom: 75px
+    .second-section__list
+        width: 100%
+        flex-direction: column
+        padding-bottom: 69px
+    .second-section__item
+        width: 100%
+        margin-bottom: 30px
+    .main-content1 .sect3-h3
+        padding-top: 98px
+    .three-section__list
+        flex-direction: column   
+    .three-section__item 
+        width: 100%
+        min-height: 317px
+        background-position: 0 100%
+        padding-bottom: 70%
+        margin-bottom: 18px
+        h4
+            width: 60%
+            min-height: 24px
+            font-size: 16px
+            line-height: 24px
+            margin: 30px auto
+        p
+            width: 60%
+            min-height: 80px
+            font-size: 14px
+            line-height: 20px
+            margin: 0 auto
+    .about-us_bottom 
+        flex-direction: column
+    .about-us_div .about-us_descr
+        margin-bottom: 50px
+    .about-us_bottom-left
+        width: 100%
+        min-height: 279px
+        background-size: contain
+        margin-bottom: 0px
+    .about-us_bottom-right
+        width: 100% 
+    .about-us_bottom-right h3
+        font-size: 20px
+        width: 100%
+        text-align: center
+        padding-top: 75px
+    
+    .about-us_bottom-right p
+        max-width: 100%
+        font-size: 14px
+        text-align: center
+    .brands
+        flex-direction: column
+        padding: 0
+        padding-top: 50px
+        img
+            width: 30%
+            margin: 0 auto
+            margin-bottom: 60px
+    .white-line_input
+        flex-direction: column
+        padding: 0
+        width: 148%
+        left: -25%
+        top: 10px
+        div
+            font-size: 24px
+            line-height: 32px
+            text-align: center
+            margin: 38px auto
+    .white-line_input 
+        form 
+            margin-right: 0
+            width: 79.1%
+            margin-bottom: 30px
+            button
+                padding: 11px 18.5px
+            input
+                padding-top: 13px
+                padding-bottom: 13px
+    .main-content1 .five-sect_h3
+        margin-top: 60px
+    .gitInTouch-list ul
+        flex-direction: column
+        width: 100%
+        li
+            width: 90%
+            margin-bottom: 30px
+    .consultation .consultation-left 
+        h4 
+            font-size: 15px
+            line-height: 15px
+            padding-top: 25px
+        p
+            font-size: 11px
+            margin-bottom: 26px
+    .consultation .consultation-right button 
+        padding: 15px 79px
+        margin-right: 0px
+        font-size: 14px
+        margin-bottom: 40px
+    .gitInTouch
+        padding-bottom: 137px
+    .consultation
+        flex-direction: column
+    .consultation .consultation-left h4
+        padding: 0
+        margin: 0
+        margin-top: 40px
+        margin-right: 139px
+        margin-left: 90px
+        margin-bottom: 10px
+    .consultation .consultation-left p
+        padding-left: 90px
+        padding-right: 156px
+        margin-bottom: 50px
+    .footer
+        flex-direction: column
+        padding-right: 0
+    .footer-bottom
+        flex-direction: column
+    .bottom-social 
+        width: 50%
+    .bottom-descr
+        margin-bottom: 15px
+    .bottom-social img:nth-child(1) 
+        padding-left: 0px
+    .bottom-social img:nth-child(4) 
+        padding-right: 0
+    .first-elem, .active-elem, .last-elem
+        padding: 0
+        a:nth-child(1)
+            margin: 0 auto
+            margin-top: 137px
+    .active-elem
+        background-position: center 50px
